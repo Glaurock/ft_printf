@@ -30,8 +30,6 @@ void	conflict(t_arg *arg)
 		arg->plus = 0;
 	if (arg->prec != 0 && (arg->var_type == INT || arg->var_type == U_INT))
 		arg->zero = 0;
-	if (arg->prec > (int)ft_strlen(arg->str))
-		arg->space = 0;
 }
 
 /*
